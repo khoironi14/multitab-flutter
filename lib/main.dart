@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:multitab_flutter/page1.dart';
 import 'package:multitab_flutter/page2.dart';
+import 'package:multitab_flutter/page3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +18,7 @@ class _MyAppState extends State<MyApp> {
   static List<Widget> _pages = [
     Page1(),
     Page2(),
+    Page3(),
   ];
   int _selectedTab = 0;
   void _selectTab(indeks) {
@@ -45,6 +47,10 @@ class _MyAppState extends State<MyApp> {
               BottomNavigationBarItem(
                 icon: Icon(Icons.sync),
                 label: 'Conversion',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.supervised_user_circle),
+                label: 'Users',
               )
             ]),
       ),
